@@ -1,0 +1,37 @@
+LING
+---------------
+# LINQ stands for language integrated query.LING  enables us to query any type of data store
+# LING enables us towork with different data source using similar coding style.
+
+
+
+
+AsEnumerable & AsQueryable Operators
+------------------------------------------------------------
+Both of these operators belong to Conversion Operators Category
+
+AsQueryable Operator
+_____________________
+There are 2 overloaded versions of this method 
+1) one overloaded version converts
+System.Collections.IEnumerable to System.Linq.IQeryable
+
+2)The other overloaded version converts a generic
+System.Collections.Generic.IEnumerable<T> to a generic System.Linq.IQueryable<T>
+
+The main use of AsQueryable operator is in unit testing to mock a queryable data source 
+using an in-memory data source
+
+
+
+////////////////////////////////
+
+AsEnumerable operator breaks the query into 2 parts
+1) The INSIDE PART(query before AsEnumerable ) is executed as Ling - to- SQL
+2) The OUTSIDE PART(query after AsEnumerable)is executed as Linq-to-Objects
+
+
+
+
+
+

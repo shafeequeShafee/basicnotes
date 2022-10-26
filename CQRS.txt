@@ -1,0 +1,25 @@
+CQRS
+________________________
+
+1) Let's create an API Project MovieManagementAPI, solution name MovieManagementCQRS
+2)lets create a class library - MovieManagementLibrary
+  solution 'MovieManagement' => add =>new project=> classLibrary
+3) MovieManagementLibrary create a new folder => Data 
+4)MovieManagementLibrary create a new folder => Models => Add => class
+5) create IDataRepository in Data folder
+6)create DataRepository in Data Folder
+7) Add Mediator Package => select 'MovieManagementLibrary' => NuGet => MediatR
+8) Create two folders Queries and Handlers in the Class Library Project
+9)Create a GetMovieListQuery in the Queries folder
+10) Create a GetMovieListHandler in the handler folder
+11) Bring the IDataRepository Dependency into the Handler Implementation
+
+12) we need to add the Mediator Dependency in the API Project
+    Mediator.Extensions.Microsoft.DependencyInjection
+    MovieManagementAPI=> NuGet =>Mediator.Extensions.Microsoft.DependencyInjection
+
+13) Add the dependencies in the DI Container(programm.cs)
+   builder.Services.AddScoped<IDataRepository, DataRepository>();
+   builder.Services.AddMediatR(typeof(DataRepository).Assembly);
+
+14) Lets create a MovieController
