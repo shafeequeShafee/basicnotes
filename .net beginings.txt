@@ -1,0 +1,30 @@
+.net Core api
+------------------------
+code first approach, Install packages 
+1)Microsoft.EntityFrameworkCore
+2)Microsoft.EntityFrameworkCore.sqlServer
+3)Microsoft.EntityFrameworkCore.Tools
+optional
+4)Microsoft.EntityFrameworkCore.Design
+
+
+steps
+______________
+step1 : create dbcontext
+step2 : create model
+step3: connection string
+step4 : dbcontext nnae service aayi add cheyyaa, programms.cs sil
+step5: code first approach, njammallannu database um table create cheyunnath
+      Tools => Nuget Package Manager => package manager console
+      === use coomand => Add-Migration createddatabase -o Data/Migrations
+                 Add-Migration createddatabase(migration name) -o Data/Migrations(location)
+
+      == To undo this action, use=> Remove-Migration.
+      == ennit  => Update-Database
+       ////// sql express vennam
+
+step6: add controllers
+
+step7: add Repository
+
+step8: injecting the dependency (Repository in programm.cs sil)

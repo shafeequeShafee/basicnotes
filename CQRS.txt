@@ -1,6 +1,7 @@
 CQRS
 ________________________
 
+
 1) Let's create an API Project MovieManagementAPI, solution name MovieManagementCQRS
 2)lets create a class library - MovieManagementLibrary
   solution 'MovieManagement' => add =>new project=> classLibrary
@@ -23,3 +24,15 @@ ________________________
    builder.Services.AddMediatR(typeof(DataRepository).Assembly);
 
 14) Lets create a MovieController
+
+
+//////////////////// allekil solution nil click cheyth rand package install cheytha mathi
+
+/// controller nnu request nerae verukka query or command ilekkannu  
+/// aa request handler cheyunnath handlerannu
+
+
+
+
+
+

@@ -1,4 +1,13 @@
+
+Clean Architecture / layered Architecture
+________________________________
+User Interface layer
+Business logic layer
+Data access layer
+Data Base
+
 CQRS (COMMAND QUERY RESPONSIBILITY SEGREGATION ) Design pattern
+________________________________________________________________
 
 CQRS- segragating query from command
 coomand       query
@@ -322,6 +331,11 @@ Build and run the app.
 
 
 ------------------------------------------------
+
+
+Mapping
+
+collections and frame work
 
 
 
