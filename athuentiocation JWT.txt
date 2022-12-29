@@ -1,0 +1,15 @@
+Authentication & Authorization
+__________________________________________
+step1 => install => Microsoft.AspNetCore.Authentication.JwtBearer
+      =>  install => Microsoft.IdentityModel.Tokens
+      => install => Microsoft.IdentityModel.Tokens.Jwt
+      => install =>
+
+step2: => appsettings.json nil kurach changes nd
+        "Jwt": {
+             "Key": "ShaFeeQue12345",
+             "Issuer": "https://localhost:44382/",
+             "Audience": ""
+         }
+      Projectil => Right Click => Properties => Debug =>SSL Url => https://localhost:44382/
+      nnit 
